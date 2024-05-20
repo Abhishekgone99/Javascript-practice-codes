@@ -7,8 +7,8 @@
 // console.log(document.head); // returns the head of html
 // console.log(document.body); // returns the body of html
 
- // document.write( "<br> <br> DOM CLASS ")  // to write somrthing in the document
- // document.writeln("<br> This is the first class ") // it is also used to write in the document
+// document.write( "<br> <br> DOM CLASS ")  // to write somrthing in the document
+// document.writeln("<br> This is the first class ") // it is also used to write in the document
 
 // document.title="Practice Class of Dom!!" // to change the title using js
 // console.log(document.title);
@@ -65,7 +65,7 @@
 //     ele1[i].style.borderRadius="20px"
 //     ele1[i].style.padding="20px"
 //     ele1[i].style.textAlign="center"
-    
+
 // }
 
 
@@ -111,3 +111,18 @@
 //     queryall[i].style.border="double 5px black"
 //     queryall[i].style.backgroundColor="pink"
 // }
+
+
+
+// call stack
+
+const multiply = (x, y) => x * y;
+const square = (x) => multiply(x * x);
+
+const isRightTriangle = (a, b, c) => (
+    square(a) + square(b) === square(c)
+)
+
+console.log("before");
+isRightTriangle(3, 4, 5);
+console.log("done");
